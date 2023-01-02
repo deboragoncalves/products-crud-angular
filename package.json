@@ -1,0 +1,23 @@
+{
+  "name": "products-crud-angular",
+  "version": "1.0.0",
+  "description": "A CRUD application using JSON Server and Angular 9, developing during the course \"Angular 9 Essencial\" from Cod3r. Status: doing",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch backend/products.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deboragoncalves/products-crud-angular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deboragoncalves/products-crud-angular/issues"
+  },
+  "homepage": "https://github.com/deboragoncalves/products-crud-angular#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

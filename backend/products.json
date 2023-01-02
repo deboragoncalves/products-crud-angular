@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Notebook DELL",
+      "price": 4000
+    },
+    {
+      "id": 2,
+      "name": "iPhone 5",
+      "price": 2000
+    },
+    {
+      "name": "Capa para iPhone",
+      "price": "18",
+      "id": 3
+    }
+  ]
+}
