@@ -16,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { BackgroundBlueDirective } from './directives/background-blue.directive';
+import { ForDirective } from './directives/for.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BackgroundBlueDirective } from './directives/background-blue.directive'
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    BackgroundBlueDirective
+    BackgroundBlueDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
