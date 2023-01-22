@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule }from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { BackgroundBlueDirective } from './directives/background-blue.directive';
 import { ForDirective } from './directives/for.directive';
@@ -38,7 +40,8 @@ import { ProductCreateComponent } from './component/product/product-create/produ
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
