@@ -25,6 +25,7 @@ import { MatInputModule } from '@angular/material/input';
 
 import { BackgroundBlueDirective } from './directives/background-blue.directive';
 import { ForDirective } from './directives/for.directive';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ForDirective } from './directives/for.directive';
     ProductCrudComponent,
     BackgroundBlueDirective,
     ForDirective,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent
   ],
   imports: [
     BrowserModule,

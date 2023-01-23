@@ -30,4 +30,8 @@ export class ProductService {
     // se a requisição for sucesso 200, irá retornar um product (de acordo com o modelo criado)
     return this.httpClient.post<Product>(this.baseUrl, product);
   }
+
+  read(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(this.baseUrl);
+  }
 }
