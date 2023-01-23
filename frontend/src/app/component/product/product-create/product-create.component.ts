@@ -12,9 +12,10 @@ export class ProductCreateComponent {
 
   // criar objeto product como teste para método create
   product: Product = {
-    name: "Teste",
-    price: 10
+    name: "",
+    price: 0
   }
+
   constructor(private productService: ProductService,
     private router: Router) {
   }
