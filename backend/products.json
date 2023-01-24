@@ -24,6 +24,11 @@
       "name": "Testando formulário",
       "price": "20",
       "id": 5
+    },
+    {
+      "name": "Novo teste",
+      "price": "100",
+      "id": 6
     }
   ]
 }
