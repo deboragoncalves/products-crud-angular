@@ -1,0 +1,23 @@
+<div class="container-form">
+    <mat-card>
+        <mat-card-title>Atualizar produto</mat-card-title>
+        <form>
+            <mat-form-field>
+                <!-- NgModel: two way data binding. valor digitado pelo usuário é alterado no 
+                objeto product atributo name no TS -->
+                <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+            </mat-form-field>
+        </form>
+        <div class="container-button">
+            <button mat-raised-button (click)="updateProduct()" color="primary">
+                Atualizar produto
+            </button>
+            <button mat-raised-button (click)="cancel()">
+                Cancelar
+            </button>
+        </div>
+    </mat-card>
+</div>
