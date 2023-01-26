@@ -37,7 +37,7 @@ export class ProductService {
 
   // método get/put recebe a url como parâmetro (url/id), retornando o próprio produto
   
-  readById(id: string): Observable<Product> {
+  readById(id: number): Observable<Product> {
     const url = `${this.baseUrl}/${id}`;
     return this.httpClient.get<Product>(url);
   }
@@ -45,5 +45,10 @@ export class ProductService {
   put(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`;
     return this.httpClient.put<Product>(url, product);   
+  }
+
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.httpClient.delete<Product>(url);
   }
 }

@@ -25,8 +25,8 @@ export class ProductUpdateComponent implements OnInit {
     // ao iniciar componente, obter produto a ser atualizado, exibindo no form os dados
     // pegar id da rota atual
     // pegar a chave id do mapa
-    const id = this.route.snapshot.paramMap.get("id");
-    id ? this.productService.readById(id).subscribe(product => this.product = product) : null;
+    const id: string | null = this.route.snapshot.paramMap.get("id");
+    id ? this.productService.readById(parseInt(id)).subscribe(product => this.product = product) : null;
   }
 
   updateProduct(): void {
