@@ -16,7 +16,7 @@ export class ProductCrudComponent {
     private headerService: HeaderService) {
     
     headerService.headerData = {
-      title: 'Cadastro de Produtos',
+      title: 'CRUD Produtos',
       icon: 'storefront',
       routeUrl: '/products'
     }
