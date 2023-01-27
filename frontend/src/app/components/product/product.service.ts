@@ -22,6 +22,7 @@ export class ProductService {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
+      // iniciar variavel isError com false, o padrão é adicionar o style de sucesso
       panelClass: isError ? ['msg-error'] : ['msg-success']
     })
   }
@@ -75,6 +76,8 @@ export class ProductService {
   }
 
   handleError(error: any): Observable<any> {
+    // exibir erro no console e exibir mensagem no snackbar, 
+    // setando a variável isError pra true, pra alterar a classe pra msg - error
     console.log(error);
     this.showMessage("Ocorreu um erro", true);
     return EMPTY;
