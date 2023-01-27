@@ -10,3 +10,21 @@ body {
 	vertical-align: middle;
 }
 
+.msg-success {
+	--mdc-snackbar-container-color: #28a745; 
+	--mdc-snackbar-supporting-text-color: #fff;
+	--mat-mdc-snack-bar-button-color: #fff;
+}
+
+.msg-error {
+	--mdc-snackbar-container-color: #e35e6b; 
+	--mdc-snackbar-supporting-text-color: #fff;
+	--mat-mdc-snack-bar-button-color: #fff;
+}
+
+/* 
+Classes Material UI para snackbar (container para exibir mensagens):
+.mat-mdc-snack-bar-container
+	--mdc-snackbar-supporting-text-color: white (texto)
+	--mdc-snackbar-container-color: green (background)
+	--mat-mdc-snack-bar-button-color: white (cor botão fechar X) */
